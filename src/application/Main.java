@@ -17,7 +17,7 @@ public class Main extends Application {
 	public TextField nameInput = new TextField();
 	public PasswordField passwordInput = new PasswordField();
 	public String password = "admin";
-	
+	//let me commit dammit
     @Override
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("GUI.fxml"));
