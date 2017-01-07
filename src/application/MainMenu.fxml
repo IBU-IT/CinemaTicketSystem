@@ -1,22 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.text.*?>
 <?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="300.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LogInController">
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainMenuController">
    <children>
-      <BorderPane layoutY="-2.0" prefHeight="301.0" prefWidth="361.0" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-2.0">
-         <bottom>
-            <Button fx:id="loginButton" mnemonicParsing="false" onAction="#showMessageOnLogIn" text="Login" BorderPane.alignment="CENTER">
-               <BorderPane.margin>
-                  <Insets bottom="50.0" />
-               </BorderPane.margin>
-            </Button>
-         </bottom>
+      <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <top>
             <VBox BorderPane.alignment="CENTER">
                <children>
@@ -39,22 +32,13 @@
                       </Menu>
                     </menus>
                   </MenuBar>
-                  <HBox alignment="TOP_CENTER">
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to The Cinema Ticket System" textAlignment="CENTER">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to The Cinema Ticket System">
                            <font>
                               <Font size="18.0" />
                            </font>
                         </Text>
-                     </children>
-                  </HBox>
-                  <HBox alignment="TOP_CENTER">
-                     <children>
-                        <Label fx:id="loginMessageLabel" textFill="#6bee00">
-                           <font>
-                              <Font size="18.0" />
-                           </font>
-                        </Label>
                      </children>
                   </HBox>
                </children>
@@ -63,9 +47,12 @@
          <center>
             <HBox alignment="CENTER" BorderPane.alignment="CENTER">
                <children>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="username: " />
-                  <TextField fx:id="nameInput" promptText="username" />
-                  <PasswordField fx:id="passwordInput" promptText="password" />
+                  <Button fx:id="addMovie" mnemonicParsing="false" onAction="#onAddMovieClick" text="Add Movie">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="reserveSeat" mnemonicParsing="false" onAction="#onReserveSeatClick" text="Reserve Seat" />
                </children>
             </HBox>
          </center>
