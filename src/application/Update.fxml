@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="application.UpdateController">
+   <children>
+      <BorderPane prefHeight="300.0" prefWidth="360.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <MenuBar BorderPane.alignment="CENTER">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </top>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Update" textAlignment="CENTER">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="updateMovies" mnemonicParsing="false" onAction="#onUpdateMoviesClick" prefHeight="25.0" prefWidth="100.0" text="Update Movies">
+                           <HBox.margin>
+                              <Insets bottom="10.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <Button fx:id="updateVenues" mnemonicParsing="false" onAction="#onUpdateVenuesClick" prefHeight="25.0" prefWidth="100.0" text="Update Venues">
+                           <HBox.margin>
+                              <Insets bottom="10.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <Button fx:id="updateUsers" mnemonicParsing="false" onAction="#onUpdateVenuesClick" prefHeight="25.0" prefWidth="100.0" text="Update Users" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="back" mnemonicParsing="false" onAction="#onBackClick" text="Back" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -7,9 +7,9 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainMenuController">
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="application.MainMenuController">
    <children>
-      <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <BorderPane prefHeight="300.0" prefWidth="360.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <top>
             <VBox BorderPane.alignment="CENTER">
                <children>
@@ -45,9 +45,9 @@
             </VBox>
          </top>
          <center>
-            <HBox alignment="CENTER" BorderPane.alignment="CENTER">
+            <HBox alignment="CENTER" BorderPane.alignment="CENTER" >
                <children>
-                  <Button fx:id="addMovie" mnemonicParsing="false" onAction="#onAddMovieClick" text="Add Movie">
+                  <Button fx:id="updateDatabase" mnemonicParsing="false" onAction="#onUpdateClick" text="Update Database">
                      <HBox.margin>
                         <Insets right="20.0" />
                      </HBox.margin>
