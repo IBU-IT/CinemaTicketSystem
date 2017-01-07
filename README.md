@@ -15,13 +15,9 @@ The program will also provide a wide variety of options for snacks and/or drinks
 same receipt as the movie ticket. 
 
 We plan on making the whole menu system with a combination of if-else and switch statements, 
-we also plan on using 2D arrays (matrixes) for the seat reservations and using: for, 
+we also plan on using 2D arrays (matrixes) (or regular arrays) for the seat reservations and using: for, 
 while and do while loops to check on the availability of free seats, 
-we’re also going to use the GUI option (using the ‘import javax.swing.JOptionPane’ library) instead of the console approach. 
-
-The if-else and switch statements are self-explanatory, we will use them to make all the menu options, 
-we will use 2D arrays to store the information about the availability of the seats, 
-and we will use for and/or while loops to go through the arrays and check for availability. 
+we’re also going to use the GUI option using JavaFX, creating the project in SceneBuilder instead of the console approach. 
 
 The project is designed with the goal to make everyone’s life easier, the staff members as well as the customers.
 
