@@ -35,13 +35,13 @@ public class LogInController implements Initializable {
 	public void showMessageOnLogIn(ActionEvent event) throws IOException{
     	
     	if(nameInput.getText().equals("admin") && passwordInput.getText().equals(password)){
-    		loginMessageLabel.setText("You've successfully Logedin!");
     		
     		sc=(Scene) loginButton.getScene();
     		root=FXMLLoader.load(getClass().getResource("MainMenu.fxml"));
     		sc.setRoot(root);
+    	}else{
     		
-    		
+    		loginMessageLabel.setText("The username and/or password you entered is incorrect!");
     		
     	}
     }

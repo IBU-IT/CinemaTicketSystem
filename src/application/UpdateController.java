@@ -33,7 +33,7 @@ public class UpdateController implements Initializable{
 	
 	public void onUpdateVenuesClick(ActionEvent event) throws IOException{
 			
-			sc=(Scene) updateMovies.getScene();
+			sc=(Scene) updateVenues.getScene();
 			root=FXMLLoader.load(getClass().getResource("UpdateVenues.fxml"));
 			sc.setRoot(root);
 			
@@ -41,7 +41,7 @@ public class UpdateController implements Initializable{
 	
 	public void onUpdateUsersClick(ActionEvent event) throws IOException{
 		
-		sc=(Scene) updateMovies.getScene();
+		sc=(Scene) updateUsers.getScene();
 		root=FXMLLoader.load(getClass().getResource("UpdateUsers.fxml"));
 		sc.setRoot(root);
 	
@@ -49,7 +49,7 @@ public class UpdateController implements Initializable{
 	
 	public void onBackClick(ActionEvent event) throws IOException{
 			
-			sc=(Scene) updateMovies.getScene();
+			sc=(Scene) back.getScene();
 			root=FXMLLoader.load(getClass().getResource("MainMenu.fxml"));
 			sc.setRoot(root);
 			

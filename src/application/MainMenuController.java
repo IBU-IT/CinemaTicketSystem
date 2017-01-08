@@ -18,6 +18,7 @@ public class MainMenuController implements Initializable {
 	@FXML private Button updateDatabase = new Button();
 	@FXML private Button reserveSeat = new Button();
 	@FXML private TextField textField = new TextField();
+	@FXML private Button back = new Button();
 	
 	Parent root;
 	Scene sc;
@@ -29,6 +30,14 @@ public class MainMenuController implements Initializable {
 	}
 	
 	public void onReserveSeatClick(ActionEvent event){
+		
+	}
+	
+	public void onBackClick(ActionEvent event) throws IOException{
+		
+		sc=(Scene) back.getScene();
+		root=FXMLLoader.load(getClass().getResource("LogIn.fxml"));
+		sc.setRoot(root);
 		
 	}
 	
