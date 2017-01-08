@@ -8,6 +8,11 @@ import javafx.scene.Parent;
 import javafx.stage.Stage;
 
 
+/* due to mine and the rest of my teams incompetence this project was not finished in time and it's only 
+ * a third finished, it's missing a database which is essential for making the program work, I only made
+ * a skeleton for the application. As sad as it is to admit, we failed.
+ */
+
 
 public class Main extends Application {
 	
