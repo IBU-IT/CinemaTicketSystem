@@ -15,8 +15,10 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("LogIn.fxml"));
       
+        Scene scene = new Scene(root,800,600);
         primaryStage.setTitle("Cinema Ticket System");
-        primaryStage.setScene(new Scene(root,800,600));
+        primaryStage.setScene(scene);
+        scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
         primaryStage.show();
         
     }

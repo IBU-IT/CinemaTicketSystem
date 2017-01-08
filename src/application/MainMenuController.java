@@ -29,7 +29,11 @@ public class MainMenuController implements Initializable {
 		sc.setRoot(root);
 	}
 	
-	public void onReserveSeatClick(ActionEvent event){
+	public void onReserveSeatClick(ActionEvent event) throws IOException{
+		
+		sc=(Scene) back.getScene();
+		root=FXMLLoader.load(getClass().getResource("ReserveSeat.fxml"));
+		sc.setRoot(root);
 		
 	}
 	
