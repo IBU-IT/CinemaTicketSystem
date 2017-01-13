@@ -43,23 +43,7 @@ public void onBackClick(ActionEvent event) throws IOException{
 	}
 public void onAddMovieClick(){
 	
-	String host="jdbc:mysql://localhost:3306/cinema_ticketsystem_db"; 
-	
-	try{
-		
-		Connection myConn = DriverManager.getConnection(host, "root", "volimnebo6!r");
-		PreparedStatement myStatement = myConn.prepareStatement("INSERT INTO movie (`title`, `director`, `description`) VALUES (?,?,?)");
-		myStatement.setString(1, title.getText());
-		myStatement.setString(2, director.getText());
-		myStatement.setString(3, description.getText());
-		
-		myStatement.executeUpdate();
-		message.setText("You've succesfully added a Movie!");
-		
-	}
-	catch(Exception e){
-		
-	}
+	DBManipulation.addMovie(title.getText(), director.getText(), description.getText(), message);
 	
 }
 	
