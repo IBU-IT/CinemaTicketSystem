@@ -6,7 +6,7 @@ public class Driver {
 	
 	public static void main(String[] args){
 		
-		PreparedStatement myStatement = null;
+		/*PreparedStatement myStatement = null;
 		ResultSet myRs = null;
 		String h8 = "h8m8?";
 		try{
@@ -26,7 +26,6 @@ public class Driver {
 		catch(Exception exc){
 			exc.printStackTrace();
 		}
-		
+	*/	
 	}
-	
-}
+	}
