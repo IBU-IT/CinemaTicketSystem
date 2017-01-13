@@ -14,12 +14,10 @@ everything can get recorded easily and monitored with the program.
 The program will also provide a wide variety of options for snacks and/or drinks that will be billed to the 
 same receipt as the movie ticket. 
 
-We plan on making the whole menu system with a combination of if-else and switch statements, 
-we also plan on using 2D arrays (matrixes) (or regular arrays) for the seat reservations and using: for, 
-while and do while loops to check on the availability of free seats, 
-we’re also going to use the GUI option using JavaFX, creating the project in SceneBuilder instead of the console approach. 
+We will be using the Java programming language to design this project.
+We plan on building the whole menu system using the JavaFX software platform, it's going to consist of fxml files and their controllers, we also plan on making a database with MySQL and connecting it with the Java code for full program functionality.
 
-The project is designed with the goal to make everyone’s life easier, the staff members as well as the customers.
+The project is designed with the goal to make everyone’s life easier, for the staff members as well as the customers.
 
 
 
